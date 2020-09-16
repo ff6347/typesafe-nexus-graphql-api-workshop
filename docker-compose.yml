@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  postgres:
+    image: postgres
+    container_name: prismapg
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: example
+    ports:
+      - 5432:5432

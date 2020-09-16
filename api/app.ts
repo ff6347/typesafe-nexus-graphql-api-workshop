@@ -4,3 +4,11 @@
  * Below are some examples of what you can do. Uncomment them to try them out!
  */
 
+import { schema, use } from 'nexus'
+import { prisma } from 'nexus-plugin-prisma'
+
+use(prisma())
+// import { db } from './__db'
+// schema.addToContext((request) => {
+//   return { db }
+// })
